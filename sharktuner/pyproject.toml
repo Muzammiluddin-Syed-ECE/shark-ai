@@ -1,5 +1,5 @@
 [project]
-name = "SHARK Tuner"
+name = "sharktuner"
 authors = [
   {name = "SHARK Authors"},
 ]
@@ -22,3 +22,8 @@ dynamic = ["version"]
 
 [project.urls]
 Repository = "https://github.com/nod-ai/shark-ai"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sharktuner*"]
+namespaces = true
