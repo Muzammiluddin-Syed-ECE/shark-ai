@@ -60,6 +60,9 @@ function download_wheels() {
   #   * https://pip.pypa.io/en/stable/installation/
   python3.13t -m pip download shortfin==${RELEASE} --no-deps -f ${ASSETS_PAGE}
 
+  # tuner
+  # python -m pip download tuner==${RELEASE} \
+  #   --no-deps --python-version 3.11 -f ${ASSETS_PAGE}
   # TODO: shark-ai meta package when it is published to nightlies
 
   echo ""

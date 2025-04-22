@@ -9,6 +9,7 @@
 # the versions of the dependencies accordingly. For nightly releases,
 #  * sharktank
 #  * shortfin
+#  * tuner
 # get pinned to the corresponding nightly version. The IREE packages are
 # unpinned. For stable releases,
 # * iree-base-compiler
@@ -16,6 +17,7 @@
 # * iree-turbine
 # * sharktank
 # * shortfin
+# * tuner
 # get pinned to the corresponding `X.Y.*` version.
 
 import argparse

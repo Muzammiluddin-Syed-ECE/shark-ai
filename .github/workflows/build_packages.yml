@@ -79,6 +79,7 @@ jobs:
             sharktank/version_local.json
             shortfin/version_local.json
             shark-ai/version_local.json
+            tuner/version_local.json
 
   build_packages:
     name: "${{ matrix.package }} :: ${{ matrix.platform }} :: ${{ matrix.python-version }}"
@@ -121,6 +122,10 @@ jobs:
             platform: linux-x86_64
             package: shortfin
             python-version: cp313-cp313t
+          - runs-on: ubuntu-24.04
+            platform: linux-x86_64
+            package: tuner
+            python-version: cp311-cp311  # Ignored (generic wheel), set for workflow naming
 
           # TODO(#130): macOS platform
           # TODO(#130): Windows platform
@@ -174,6 +179,11 @@ jobs:
       run: |
         [ -e ./bindist/* ] && rm ./bindist/*
         ./c/shortfin/build_tools/build_linux_package.sh
+    - name: Build tuner (Linux x86_64)
+      if: "matrix.package == 'tuner' && matrix.platform == 'linux-x86_64'"
+      run: |
+        [ -e ./bindist/* ] && rm ./bindist/*
+        ./c/tuner/build_tools/build_linux_package.sh
 
     # Always upload to GitHub artifacts.
     - name: Upload python wheels
