@@ -132,7 +132,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      uses: actions/checkout@53f3231214c840928f78951785cdd4a510d65fe0 # v4.2.2
       with:
         path: "c" # Windows can hit path length limits, so use a short path.
         submodules: false
