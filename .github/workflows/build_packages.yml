@@ -79,7 +79,7 @@ jobs:
             sharktank/version_local.json
             shortfin/version_local.json
             shark-ai/version_local.json
-            sharktuner/version_local.json
+            tuner/version_local.json
 
   build_packages:
     name: "${{ matrix.package }} :: ${{ matrix.platform }} :: ${{ matrix.python-version }}"
@@ -183,7 +183,7 @@ jobs:
       if: "matrix.package == 'tuner' && matrix.platform == 'linux-x86_64'"
       run: |
         [ -e ./bindist/* ] && rm ./bindist/*
-        ./c/sharktuner/build_tools/build_linux_package.sh
+        ./c/tuner/build_tools/build_linux_package.sh
 
     # Always upload to GitHub artifacts.
     - name: Upload python wheels

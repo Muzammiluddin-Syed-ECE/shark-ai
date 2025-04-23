@@ -235,4 +235,4 @@ It will take some time to finish tuner. You should see the final candidates spec
 
 
 ## Reference links:
-[Tuner Example](https://github.com/amd-vivekag/shark-ai/blob/main/sharktuner/examples/simple/README.md)
+[Tuner Example](https://github.com/amd-vivekag/shark-ai/blob/main/tuner/examples/simple/README.md)
