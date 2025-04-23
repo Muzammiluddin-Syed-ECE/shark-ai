@@ -3,7 +3,7 @@
 Example of tuning a dispatch and a full model.
 
 ## Environments
-Follow instructions in [`/tuner/README.md`](../../README.md)
+Follow instructions in [`/sharktuner/README.md`](../../README.md)
 
 ## Running the Tuner
 
