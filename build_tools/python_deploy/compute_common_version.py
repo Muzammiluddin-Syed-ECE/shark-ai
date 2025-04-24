@@ -37,7 +37,7 @@ THIS_DIR = Path(__file__).parent
 REPO_ROOT = THIS_DIR.parent.parent
 
 VERSION_FILE_SHARKTANK_PATH = REPO_ROOT / "sharktank/version.json"
-VERSION_FILE_SHARKTANK_PATH = REPO_ROOT / "sharktuner/version.json"
+VERSION_FILE_SHARKTUNER_PATH = REPO_ROOT / "sharktuner/version.json"
 VERSION_FILE_SHORTFIN_PATH = REPO_ROOT / "shortfin/version.json"
 VERSION_FILE_LOCAL_PATH = REPO_ROOT / "shark-ai/version_local.json"
 
