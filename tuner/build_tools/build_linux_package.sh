@@ -19,7 +19,7 @@ THIS_DIR="$(cd $(dirname $0) && pwd)"
 REPO_ROOT="$(cd "$THIS_DIR"/../../ && pwd)"
 OUTPUT_DIR="${OUTPUT_DIR:-${THIS_DIR}/wheelhouse}"
 
-python -m pip wheel --disable-pip-version-check --no-deps -v -w "${OUTPUT_DIR}" "${REPO_ROOT}/shark-ai"
+python -m pip wheel --disable-pip-version-check --no-deps -v -w "${OUTPUT_DIR}" "${REPO_ROOT}/tuner"
 
-wheel_output="$(echo "${OUTPUT_DIR}/shark-ai-"*".whl")"
+wheel_output="$(echo "${OUTPUT_DIR}/tuner-"*".whl")"
 ls "${wheel_output}"
