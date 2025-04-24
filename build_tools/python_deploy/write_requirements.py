@@ -80,6 +80,7 @@ if Version(PACKAGE_VERSION).is_prerelease:
         "sharktuner=="
         + Version(SHARKTUNER_PACKAGE_VERSION).base_version
         + args.version_suffix
+        + "\n"
     )
     requirements += (
         "shortfin=="
